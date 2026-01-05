@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <title>Youth Soccer Players Form</title>
+    <style>
+      form {
+        font: 1em sans-serif;
+        max-width: 320px;
+      }
+
+      p > label {
+        display: block;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="number"],
+      textarea,
+      fieldset {
+        width: 100%;
+        border: 1px solid #333;
+        box-sizing: border-box;
+      }
+
+      input:invalid {
+        box-shadow: 0 0 5px 1px red;
+      }
+
+      input:focus:invalid {
+        box-shadow: none;
+      }
+
+      button {
+        display:block
+      }
+    </style>
+  </head>
+<body>
+    <form>
+      <p>
+        <label for="t1">What's your first name?<span aria-label = "required">*</span></label>
+        <input 
+            type="text" 
+            id="t1" 
+            name="text"
+            required
+        />
+      </p>
+    <p>
+        <label for="t2">What's your last name?<span aria-label = "required">*</span></label>
+        <input 
+            type="text" 
+            id="t2" 
+            name="text"
+            required
+        />
+      </p>
+       <p>
+        <label for="n1">How old are you?<span aria-label = "required">*</span></label>
+        <input
+          type="number"
+          min="8"
+          max="16"
+          step="1"
+          id="n1"
+          name="age"
+          required
+        />
+      </p>
+        <p>
+        <label for="t3">What's your parent's/guardian's email address?<span aria-label = "required">*</span></label>
+        <input
+          type="email"
+          id="t3"
+          name="email"
+          required
+        />
+      </p>
+      <p>
+        <label for="t4">What's your phone number?<span aria-label = "required">*</span></label>
+        <input
+          type="tel"
+          id="t4"
+          name="phonenum"
+          pattern="[0-9]{4} [0-9]{3} [0-9]{4}"
+          required
+        />
+      </p>
+        <fieldset>
+        <legend>
+          What's your soccer experience
+        </legend>
+        <input 
+        type="radio" 
+        name="experience" 
+        id="r1" 
+        value="none" 
+        required
+        />
+        <label for="r1">None</label>
+
+        <input 
+        type="radio" 
+        name="experience" 
+        id="r2" 
+        value="1-2" 
+        required
+        />
+        <label for="r2">1-2 Years</label>
+        
+        <input 
+        type="radio"  
+        name="experience" 
+        id="r3" 
+        value="3+" 
+        required
+        />
+        <label for="r3">3+ Years</label>
+      </fieldset>
+      <p>
+        <label for="t5"
+          >What's your t-shirt size?
+      </label>
+        <select name ="size" id ="t5">
+          <option value = "xs">xs</option>
+          <option value = "s">s</option>
+          <option value ="m">m</option>
+          <option value = "l">l</option>
+          <option value ="xl">xl</option>
+        </select>
+      </p>
+      <p>
+        <button>Submit</button>
+      </p>
+    </form>
+  </body>
+</html>
