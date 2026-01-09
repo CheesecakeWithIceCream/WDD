@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Go touch grass</title>
+    <script>
+        function showGrass(){
+            document.getElementById("one").style.display = "block";
+            document.getElementById("two").style.display = "none";
+        }
+        function showGames(){
+            document.getElementById("one").style.display = "none";
+            document.getElementById("two").style.display = "block";
+        }
+    </script>
+    </head>
+    <body>
+        <p id = "one" style="display:none">
+            This is grass. Gamers don't touch this (especially league of legend players)
+        </p>
+        <img class = "button" onclick="showGrass()" src ="download.jfif">
+        <p id = "two" style="display:none">
+            This is a disgusting game.
+        </p>
+        <img class = "button" onclick="showGames()" src ="download2.jfif">
+    </body>
+</html>

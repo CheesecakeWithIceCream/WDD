@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>My Name</title>
+    <script>
+      function mouseOver(letter) {
+        document.getElementById(letter).style.color = "red";
+      }
+      function mouseOut(letter) {
+        document.getElementById(letter).style.color = "black";
+      }
+      function handleClick(letter) {
+        document.getElementById(letter).style.color = "green";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1 id="S" onmouseover="mouseOver('S')" onmouseout="mouseOut('S')" onclick="handleClick('S')">S</h1>
+    <h1 id="u" onmouseover="mouseOver('u')" onmouseout="mouseOut('u')" onclick="handleClick('u')">u</h1>
+    <h1 id="p" onmouseover="mouseOver('p')" onmouseout="mouseOut('p')" onclick="handleClick('p')">p</h1>
+    <h1 id="r" onmouseover="mouseOver('r')" onmouseout="mouseOut('r')" onclick="handleClick('r')">r</h1>
+    <h1 id="e" onmouseover="mouseOver('e')" onmouseout="mouseOut('e')" onclick="handleClick('e')">e</h1>
+    <h1 id="m" onmouseover="mouseOver('m')" onmouseout="mouseOut('m')" onclick="handleClick('m')">m</h1>
+    <h1 id="e" onmouseover="mouseOver('e')" onmouseout="mouseOut('e')" onclick="handleClick('e')">e</h1>
+    
+  </body>
+</html>
